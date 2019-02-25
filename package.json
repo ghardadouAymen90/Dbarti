@@ -12,7 +12,7 @@
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+    "heroku-postbuild": "cd Client && npm install --only=dev && npm install && npm run build"
   },
   "author": "aymen",
   "license": "ISC",
