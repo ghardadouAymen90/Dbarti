@@ -43,7 +43,7 @@ app.use("/api/recipes", recipes);
 app.get('/*', function(req,res) {res.sendFile(path.join(__dirname + '/Client/build/index.html')); })
 
 app.use(express.static("public"));
-app.use(express.static("build"));
+app.use(express.static("Client/build"));
 app.use("*/uploads", express.static("uploads")); //make uploads folder accessible
 
 //Server Listening
