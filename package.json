@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "recipes project",
   "main": "server.js",
+  "homepage": ".",
   "engines": {
     "node": "10.14.1"
   },
