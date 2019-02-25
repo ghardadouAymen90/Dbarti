@@ -4,10 +4,9 @@ const bodyParser = require("body-parser");
 const passport = require("passport");
 const users = require("./routes/api/users");
 const recipes = require("./routes/api/recipes");
-const path= require('path')
+const path = require("path");
 
 const app = express();
-
 
 // require some inputed environment variable
 require("dotenv").config();
@@ -26,7 +25,7 @@ const db_atlas = require("./config/keys").MONGO_ATLAS_URI;
 
 // Connect to MongoDB
 mongoose
-  .connect(db_atlas||db, { useNewUrlParser: true })
+  .connect(db_atlas || db, { useNewUrlParser: true })
   .then(() => console.log("MongoDB successfully connected"))
   .catch(err => console.log(err));
 
@@ -39,11 +38,18 @@ require("./config/passport")(passport);
 // Routes
 app.use("/api/users", users);
 app.use("/api/recipes", recipes);
-//if no routes are hit, send to react app
-app.get('/*', function(req,res) {res.sendFile(path.join(__dirname + '/Client/build/index.html')); })
 
+//in production
+if (process.env.NODE_ENV === "production") {
+  // Set static folder
+  app.use(express.static("Client/build"));
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "Client", "build", "index.html"));
+  });
+}
 app.use(express.static("public"));
-app.use(express.static("build"));
+
 app.use("*/uploads", express.static("uploads")); //make uploads folder accessible
 
 //Server Listening
