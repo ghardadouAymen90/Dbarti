@@ -1,0 +1,237 @@
+/*profile*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100);
+.wrapper {
+  height: auto;
+  width: 100%;
+}
+
+.profileCss {
+  background: rgba(0,0,0,0.71);
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.71) 0%, rgba(89,89,89,0.71) 0%, rgba(102,102,102,0.81) 34%, rgba(71,71,71,0.87) 54%, rgba(19,19,19,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0.71)), color-stop(0%, rgba(89,89,89,0.71)), color-stop(34%, rgba(102,102,102,0.81)), color-stop(54%, rgba(71,71,71,0.87)), color-stop(100%, rgba(19,19,19,1)));
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.71) 0%, rgba(89,89,89,0.71) 0%, rgba(102,102,102,0.81) 34%, rgba(71,71,71,0.87) 54%, rgba(19,19,19,1) 100%);
+  background: -o-linear-gradient(top, rgba(0,0,0,0.71) 0%, rgba(89,89,89,0.71) 0%, rgba(102,102,102,0.81) 34%, rgba(71,71,71,0.87) 54%, rgba(19,19,19,1) 100%);
+  background: -ms-linear-gradient(top, rgba(0,0,0,0.71) 0%, rgba(89,89,89,0.71) 0%, rgba(102,102,102,0.81) 34%, rgba(71,71,71,0.87) 54%, rgba(19,19,19,1) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.71) 0%, rgba(89,89,89,0.71) 0%, rgba(102,102,102,0.81) 34%, rgba(71,71,71,0.87) 54%, rgba(19,19,19,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#131313', GradientType=0 );
+}
+
+.wrapper:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
+}
+
+.wrapper-inner {
+  position: relative;
+  height: 100%;
+}
+
+.box-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin-top: 40px;
+}
+
+.box {
+  position: relative;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 4px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 1px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  height: 100%;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 600px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.box-inner {
+  padding: 100px;
+}
+
+.avatar {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  top: -130px;
+  margin-left: -90px;
+  left: 49%;
+  position: absolute;
+}
+
+.avatar img {
+  width: 200px;
+  height: 200px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.name, .followers-title {
+  font-size: 38px;
+  font-weight: 100;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 2px;
+  color: rgb(253, 253, 253);
+}
+
+.age {
+  font-size: 18px;
+  font-style: italic;
+  color: rgb(224, 221, 213);
+  margin-bottom: 2px;
+}
+
+.location {
+  color: #b3b3b3;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.location .fa {
+  color: #c6c6c6;
+  margin-right: 4px;
+}
+
+.social-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  padding-top: 1px;
+  display: table;
+  margin: 0 auto;
+}
+
+.social-list>li {
+  float: left;
+  display: block;
+}
+
+.social-list>li>a {
+  display: block;
+  width: 45px;
+  height: 55px;
+  line-height: 55px;
+  font-size: 28px;
+  text-decoration: none;
+  color: #b3b3b3;
+  border-right: 1px solid #ededed;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -ms-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.social-list>li>a:hover {
+  background: #f59507;
+  color: #fff;
+}
+
+.social-list>li>a:hover.fa-facebook {
+  background: #3b5998;
+}
+
+.social-list>li>a:hover.fa-twitter {
+  background: #55acee;
+}
+
+/*spinner*/
+
+.nb_spinner {
+  width: 75px;
+  height: 75px;
+  margin: 0;
+  background: transparent;
+  border-top: 4px solid #009688;
+  border-right: 4px solid transparent;
+  border-radius: 50%;
+  -webkit-animation: 1s spin linear infinite;
+  animation: 1s spin linear infinite;
+}
+
+/*recipe*/
+
+.oneRecipe {
+  padding: 0px 70px;
+  padding-top: 540px;
+  padding-bottom: 60px;
+}
+
+.carousel {
+  height: auto !important;
+}
+
+/*mouse scroll down*/
+
+.scroll-downs {
+  position: fixed;
+  bottom: 25px;
+  right: 20px;
+  margin: auto;
+  width: 34px;
+  height: 55px;
+}
+
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid rgb(189, 187, 187);
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: rgb(189, 187, 187);
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15, .41, .69, .94);
+  animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+}

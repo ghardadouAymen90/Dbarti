@@ -1,0 +1,21 @@
+.card {
+  position: relative;
+  max-width: 100%;
+  width: 250px;
+  min-width: 250px;
+  min-height: 350px;
+  display: flex;
+  flex-flow: column;
+  background-color: #ecf0f1;
+  border-radius: 0.25rem;
+  margin: 1rem;
+  user-select: none;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+
+  &.tagged-content-card:hover {
+    box-shadow: 1px 1px #53a7ea, 2px 2px #53a7ea, 3px 3px #53a7ea;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+}

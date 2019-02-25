@@ -1,0 +1,14 @@
+Pull in our required dependencies (namely express, mongoose and bodyParser)
+
+Initialize our app using express()
+
+Apply the middleware function for bodyparser so we can use it
+
+Pull in our MongoURI from our keys.js file and connect to our MongoDB database
+
+require routes and passport. Use passport as a middleware, configure passport and declare routes
+
+Set the port for our server to run on and have our app listen on this port
+
+Added proxy to package.json to be able in axios to request axios.post(‘api/users/register') 
+instead of axios.post(‘http://localhost:5000/api/users/register');

@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+// VARIABLES
+$bg: url("./fond.jpg") no-repeat center;
+
+// FONT
+$font: "Roboto", sans-serif;
+
+// COLORS
+$white: #fff;
+$black: #212129;
+$gray: #9b9b9b;
+$heart: #17bebb;
+$heartSelected: orange;
+$star: orange;
+$button: #ef3e36;
+
+
+.cardBody {
+  background: $bg;
+  display: flex;
+  justify-content: center;
+  width: 90% !important;
+  max-height: 60% !important;
+  max-width: initial;
+}
+
+.cardRecipe {
+  position: relative;
+  background: $white;
+  width: 70%;
+  margin: 20px auto;
+  box-shadow: 0px 0px 30px 2px #000;
+  .header {
+    background-size: cover;
+    min-height: 300px;
+    .icon a .fa-heart {
+      position: absolute;
+      left: 93%;
+      bottom: 52.5%;
+      background: $heart;
+      color: $white;
+      font-size: 1.3em;
+      font-weight: bold;
+      padding: 15px;
+      border-radius: 50%;
+      box-shadow: 0px 5px 30px 1px $heart;
+    }
+  }
+  .text {
+    .food {
+      color: $black;
+      text-align: left;
+      font-weight: normal;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin: 5px 30px;
+    }
+    .fa-clock-o {
+      color: $gray;
+      margin: 0 30px;
+    }
+    .fa-users {
+      color: $gray;
+      margin: 0 30px;
+    }
+    .fa-thumbs-up{
+      color: $gray;
+    }
+  }
+  .stars {
+    margin: 10px 30px;
+    li a i {
+      color: $star;
+    }
+  }
+  .info {
+    margin: 10px 30px;
+  }
+}
+
+.liked {
+  color: $heartSelected !important;
+}

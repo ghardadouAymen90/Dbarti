@@ -1,0 +1,16 @@
+axios: promise based HTTP client for making requests to our backend
+
+classnames: used for conditional classes in our JSX
+
+jwt-decode: used to decode our jwt so we can get user data from it
+
+react-redux: allows us to use Redux with React
+
+react-router-dom: used for routing purposes
+
+redux: used to manage state between components (can be used with React or any other view library)
+
+Thunks are the recommended middleware for basic Redux side effects logic, including complex synchronous logic that needs access to the store,
+and simple async logic like AJAX requests.
+A thunk is a function that wraps an expression to delay its evaluation.
+redux-thunk: middleware for Redux that allows us to directly access the dispatch method to make asynchronous calls from our actions
