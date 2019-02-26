@@ -21,7 +21,7 @@ class TaggedContentCard extends React.Component {
       <a
         className="card-link"
         href={`/recipe/${_id}`}
-        onClick={this.clicked}
+        onMouseEnter={this.clicked}
       >
         <Card className="tagged-content-card">
           <CardOverlay thumbnail={recipePhoto} />
