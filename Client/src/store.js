@@ -12,13 +12,11 @@ const persistConfig = {
   whitelist: ['recipe']
 };
 const persistedReducer = persistReducer(persistConfig, rootReducer);
+const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const store = createStore(
   persistedReducer,
   initialState,
-  compose(
-    applyMiddleware(...middleware),
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__({ trace: true, traceLimit: 25 })
-  )
+  composeEnhancer(applyMiddleware(...middleware))
 );
 export default store;
