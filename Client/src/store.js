@@ -17,7 +17,8 @@ const store = createStore(
   persistedReducer,
   initialState,
   compose(
-    applyMiddleware(...middleware), Commented redux dev tools to make app woking on mobile browser
+    applyMiddleware(...middleware),
+    //comment redux dev tool to make app work on mobile browser
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__({ trace: true, traceLimit: 25 })
   )
 );
