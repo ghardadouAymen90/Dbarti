@@ -1,5 +1,5 @@
-On local:                                                                                                                               
-Install node modules: enter project + npm install enter client folder + npm install
+Locally:                                                                                                                               
+Install node modules: enter project + npm install ,enter client folder + npm install
 
 run database with mongod
 
