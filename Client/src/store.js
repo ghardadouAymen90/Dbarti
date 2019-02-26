@@ -7,7 +7,7 @@ const initialState = {};
 const middleware = [thunk];
 
 const persistConfig = {
-  key: 'root',
+  key: 'primary',
   storage: storage,
   whitelist: ['recipe']
 };
